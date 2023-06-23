@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <div class="uk-container ">
+        <div class="uk-container uk-container-expand">
             <div class="uk-grid ">
                 <div class="uk-width-2-5@l uk-width-1-3@m uk-width-1-4@s">
                     <!-- logo header begin -->
@@ -38,14 +38,15 @@
                                     <div data-uk-form-custom="target: > * > span:last-child">
                                         <select>
                                             <option value="1">English</option>
-                                            <option value="2">Nepali</option>
+                                            <!-- <option value="2">Nepali</option> -->
                                         </select>
                                         <span>
                                             <span class="idz-globe"><i class="fa fa-globe"></i></span>
                                         <span></span>
                                         </span>
                                     </div>
-                                     </form> <a class="uk-button uk-display-inline" href=""><i class="fa fa-sign-in"></i>&nbsp; Login</a> 
+                                </form> 
+                                     <!-- <a class="uk-button uk-display-inline" href=""><i class="fa fa-sign-in"></i>&nbsp; Login</a>  -->
                             </div>
                         </div>
                         <div class="uk-width-1-2 phone-number">
@@ -55,39 +56,34 @@
                 </div>
                 <div class="uk-width-1-1">
                     <hr>
+                    <hr>
                     <!-- Main navigation begin -->
                     <nav class="uk-navbar-container uk-visible@m" data-uk-navbar style="z-index: 980;" data-uk-sticky="animation: uk-animation-slide-top; cls-active: uk-sticky; cls-inactive: uk-navbar-container; bottom: #offset">
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav">
-                                <li class="uk-active"> <a href="index.html">Home</a>
-                                </li>
-                                <li><a href="lng.html">E-Bima</a></li>
-                                <li><a href="education.html">E-Bank</a></li>
-                                <li><a href="blog.html">E-Stock</a></li>
-                                <li><a href="testimonials.html">E-Loan</a></li>
-                                <li> <a href="about.html">E-Credit Card</a>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            
-                           
-                                <!--  <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
-                                        <div>
-                                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-nav-header">Bibaabo</li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href=" ">Our Team</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </div>
-
+                                <li class="uk-active"> <a href="index.html">Home</a></li>
+                                <li><a href="Ebima.html">E-Bima</a></li>
+                                <li><a href="Ebank.html">E-Bank</a></li>
+                                <li><a href="Estock.html">E-Stock</a></li>
+                                <li><a href="Eloan.html">E-Loan</a></li>
+                                <li> <a href="Ecreditcard.html">E-Credit Card</a>
+                                <li> <a >About US</a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-1" data-uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li><a href="Ourteam.html">Our Team</a></li>
+                                                    <li><a href="contact.html">Contact US</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>  
                                     </div>
-                                </div>
-                            </li> -->
+                                    
+                                 </li>
                             </ul>
                         </div>
                         <div class="uk-navbar-right uk-visible@l">
-                            <div data-uk-margin> <a class="uk-button uk-button-default" href="">Refer and earn</a> <a class="uk-button uk-button-primary" href="">Learn and Grow</a> </div>
+                            <div data-uk-margin> <a class="uk-button uk-button-default" href="">Refer and earn</a> <a class="uk-button uk-button-primary" href="Learn.html">Learn and Grow</a> </div>
                         </div>
                     </nav>
                     <!-- Main navigation end -->
@@ -103,18 +99,17 @@
                                         </li>
                                         <li><a href="lng.html">E-bima</a></li>
                                         <li><a href="education.html">E-Bank</a></li>
-                                        <li > <a href="blog.html">E-Stock</a>
-                                            <!-- <ul class="uk-nav-sub">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul> -->
-                                        </li>
+                                        <li > <a href="blog.html">E-Stock</a></li>
                                         <li><a href="testimonials.html">E-Loan</a></li>
                                         <li><a href="about.html">E-Credit Card</a></li>
-
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="uk-parent"> <a href="">Know US</a>
+                                            <ul class="uk-nav-sub">
+                                                
+                                                <li><a href="Ourteam.html">Our Team</a></li>
+                                                <li><a href="contact.html">Contact US</a></li>
+                            
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -264,26 +259,26 @@
         <!-- Stock ticker end -->
     </section>
     <section>
-        <div class="uk-container">
+        <div class="uk-container" uk-scrollspy="cls: uk-animation-slide-left; repeat: true delay: 1000">
             <div class="uk-grid">
                 <div class="uk-width-1-1">
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <h2 class="uk-text-center">Multiple Service, One Platform (Open account by single KYC)</h2>
+                    <div class="uk-card uk-card-default uk-card-body ">
+                        <h2 class="uk-text-center uk-animation-slide-right">Multiple Service, One Platform (Open account by single KYC)</h2>
                         <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1@s" data-uk-grid>
-                            <div class="uk-text-center"> <img class="uk-margin-bottom" src="images/new image/Bank.png" alt="">
+                            <div class="uk-text-center uk-animation-slide-right"> <img class="uk-margin-bottom" src="images/new image/Bank.png" alt="">
                                 <h6 class="uk-text-uppercase uk-text-muted uk-margin-remove-top uk-margin-small-bottom">Bank Account</h6>
                                 <p class="uk-margin-remove-top">You can now open an online bank account with any bank without any problems through Bibaabo by using of video kyc.</p>
                             </div>
-                            <div class="uk-text-center"> <img class="uk-margin-bottom" src="images/new image/DEMAT.png" alt="">
+                            <div class="uk-text-center uk-animation-slide-right"> <img class="uk-margin-bottom" src="images/new image/DEMAT.png" alt="">
                                 <h6 class="uk-text-uppercase uk-text-muted uk-margin-remove-top uk-margin-small-bottom">Demat Account</h6>
                                 <p class="uk-margin-remove-top">Bibaabo offers a user-friendly solution for opening a Demat account, ensuring a smooth and hassle-free experience for investors.</p>
                             </div>
-                            <div class="uk-text-center"> <img class="uk-margin-bottom" src="images/new image/stock.png" alt="">
+                            <div class="uk-text-center uk-animation-slide-right"> <img class="uk-margin-bottom" src="images/new image/stock.png" alt="">
                                 <h6 class="uk-text-uppercase uk-text-muted uk-margin-remove-top uk-margin-small-bottom">TMS Account</h6>
                                 <p class="uk-margin-remove-top">Bibaabo offers seamless Digital TMS accounts, empowering individuals to actively participate in the stock market and
                                 manage their investments effectively.</p>
                             </div>
-                            <div class="uk-text-center"> <img class="uk-margin-bottom" src="images/new image/wallete.png" alt="">
+                            <div class="uk-text-center uk-animation-slide-right"> <img class="uk-margin-bottom" src="images/new image/wallete.png" alt="">
                                 <h6 class="uk-text-uppercase uk-text-muted uk-margin-remove-top uk-margin-small-bottom">Wallet Account</h6>
                                 <p class="uk-margin-remove-top">Bibaabo offers a convenient and flexible way to open a digital wallet account, allowing you to efficiently manage your
                                 finances in today's digital era.</p>
@@ -318,8 +313,8 @@
             </div>
         </div>
     </section>
-    <section class="uk-margin-large-bottom idz-invest-product">
-        <div class="uk-container">
+    <section class="uk-margin-large-bottom idz-invest-product" uk-scrollspy="target: > div; cls: uk-animation-slide-right; repeat: true delay: 500">
+        <div class="uk-container uk-animation-fade">
             <div class="uk-grid uk-margin-small-top">
                 <div class="uk-width-3-5@l uk-width-1-1@m uk-width-1-1@s">
                     <h2 class="uk-margin-remove-bottom">Bibaabo is the best learning and earning platform in Nepal. It allows users to learn, earn and grow.</h2>
@@ -387,12 +382,16 @@
                                     <li><i class="fa fa-3x fa-android"></i>Android</li>
                                     <li><i class="fa fa-3x fa-internet-explorer"></i>Browser</li>
                                 </ul> -->
-                                <div class="uk-card uk-card-default uk-card-medium uk-card-body idz-card-custom">
-                                    <h6 class="uk-text-uppercase uk-text-success">Digital Broker</h6>
-                                    <p class="uk-text-lead">Introducing Nepal's first digital broker! Experience effortless and user-friendly trading with us. </p>
-                                    <p>Whether you're an experienced trader or new to the market, our platform makes trading easy, convenient, and accessible
-                                    for all.</p>
-                                    <div class="uk-text-center uk-margin-small-bottom"> <a class="uk-button uk-button-primary" href="">Create TMS Account</a> </div>
+                                <div class="uk-card uk-card-default uk-card-large uk-card-body idz-card-custom">
+                                    <h6 class="uk-text-uppercase uk-text-success">Video KYC</h6>
+                                    <p class="uk-text-lead">At Bibaabo, we redefine the way you experience financial services. With our innovative video KYC solution, you can say
+                                    goodbye to tedious paperwork and long queues. Our streamlined process allows you to verify your identity conveniently
+                                    from the comfort of your own home, saving you valuable time and effort. </p>
+                                    <!-- <p>But that's not all. We understand that managing our finances often involves juggling multiple accounts across different
+                                    platforms. That's why we've made it easier than ever to open and access various accounts. With just one KYC, you can
+                                    unlock a world of possibilities, including a bank account, demat account, trading management system (TMS) account, and
+                                    wallet account. Say hello to seamless financial management, all in one place.</p> -->
+                                    <div class="uk-text-center uk-margin-small-bottom"> <a class="uk-button uk-button-primary" href="">Connect with Video KYC</a> </div>
                                 </div>
                             </div>
                             <div class="uk-width-2-3@l uk-width-3-5@m uk-inline"> <img class="uk-align-center uk-position-bottom idz-media-adjust1" src="images/content/content_sample1.png" alt=""> </div>
@@ -402,36 +401,36 @@
             </div>
         </div>
     </section>
-    <section class="uk-margin-large-bottom">
+    <section class="uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: true delay: 500">
         <div class="uk-container">
             <div class="uk-grid">
                 <div class="uk-width-1-1">
-                    <h2 class="uk-text-center uk-margin-medium-bottom">सामाजिक उत्तरदायित्व</h2>
+                    <h2 class="uk-text-center uk-margin-medium-bottom ">सामाजिक उत्तरदायित्व</h2>
                     <div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-medium uk-grid-match" data-uk-grid>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card">
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card uk-animation-scale-up">
                                 <div class="uk-grid-small uk-flex-top" data-uk-grid>
                                     <div class="uk-width-auto"> <i class="fa fa-3x fa-book"></i> </div>
                                     <div class="uk-width-expand">
-                                        <h6 class="uk-text-uppercase uk-text-muted uk-margin-small-top">वित्तीय साक्षरता</h6>
+                                        <h6 class="uk-text-uppercase uk-text-muted uk-margin-small-top ">वित्तीय साक्षरता</h6>
                                         <!-- <p class="uk-margin-remove-top">Learn the basic concepts of trading, what this market is all about, and why you should be a part of it.</p> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card">
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card uk-animation-scale-up">
                                 <div class="uk-grid-small uk-flex-top" data-uk-grid>
                                     <div class="uk-width-auto"> <i class="fa fa-3x fa-gears"></i> </div>
                                     <div class="uk-width-expand">
-                                        <h6 class="uk-text-uppercase uk-text-muted uk-margin-small-top">वित्तीय पहुँचता</h6>
+                                        <h6 class="uk-text-uppercase uk-text-muted uk-margin-small-top ">वित्तीय पहुँचता</h6>
                                         <!-- <p class="uk-margin-remove-top">Familiarize yourself with advanced strategies and FITS trading toolset. Take your trading to the next level.</p> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card">
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card uk-animation-scale-up">
                                 <div class="uk-grid-small uk-flex-top" data-uk-grid>
                                     <div class="uk-width-auto"> <i class="fa fa-3x fa-area-chart"></i> </div>
                                     <div class="uk-width-expand">
@@ -442,7 +441,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card">
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card uk-animation-scale-up">
                                 <div class="uk-grid-small uk-flex-top" data-uk-grid>
                                     <div class="uk-width-auto"> <i class="fa fa-3x fa-calculator"></i> </div>
                                     <div class="uk-width-expand">
@@ -453,7 +452,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card">
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card uk-animation-scale-up">
                                 <div class="uk-grid-small uk-flex-top" data-uk-grid>
                                     <div class="uk-width-auto"> <i class="fa fa-3x fa-support"></i> </div>
                                     <div class="uk-width-expand">
@@ -464,7 +463,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card ">
+                            <div class="uk-card uk-card-default uk-card-small uk-card-body idz-resources-card uk-animation-scale-up ">
                                 <div class="uk-grid-small uk-flex-top" data-uk-grid>
                                     <div class="uk-width-auto"> <i class="fa fa-3x fa-youtube-play"></i> </div>
                                     <div class="uk-width-expand">
@@ -525,7 +524,7 @@
                         <li><a href="#">Locker</a></li>
                     </ul>
                 </div>
-                 <div class="uk-width-1-4@l uk-width-1-5@m uk-width-1-3@s">
+                 <div class="uk-width-1-4@l uk-width-1-5@m uk-width-1-3@s uk-margin-medium-top">
                     <ul class="uk-list">
                         
                         <li><a href="#">About us</a></li>
@@ -537,15 +536,17 @@
                 </div> 
                 <div class="uk-width-1-4@l uk-width-2-5@m uk-width-1-1@s">
                     <div class="uk-align-right idz-footer-adjust">
-                        <a href="" class="uk-icon-button uk-margin-small-right" data-uk-icon="icon: facebook"></a>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" data-uk-icon="icon: twitter"></a>
-                        <a href="" class="uk-icon-button  uk-margin-small-right" data-uk-icon="icon: instagram"></a>
-                        <a href="" class="uk-icon-button" data-uk-icon="icon: youtube"></a>
+                        <a href="https://www.facebook.com/bibaabonepal?mibextid=ZbWKwL" class="uk-icon-button uk-margin-small-right" data-uk-icon="icon: facebook"></a>
+                        <a href="https://twitter.com/bibaabo_nepal?t=U070ogDFcUjNl8EXyIWITA&s=09" class="uk-icon-button  uk-margin-small-right" data-uk-icon="icon: twitter"></a>
+                        <a href="https://instagram.com/bibaabofinancialservice?igshid=MzRlODBiNWFlZA==" class="uk-icon-button  uk-margin-small-right" data-uk-icon="icon: instagram"></a>
+                        <a href="https://www.linkedin.com/company/bibaabo-service/" class="uk-icon-button uk-margin-small-right  " data-uk-icon="icon: linkedin"></a>
+                        <!-- <a href="" class="uk-icon-button uk-margin-small-right uk-margin-small-top" data-uk-icon="icon:tiktok"></a> -->
+                        <a href="https://www.youtube.com/@Bibaabo/channels" class="uk-icon-button uk-margin-small-top " data-uk-icon="icon: youtube"></a>
                     </div>
-                    <div class="idz-footer-download uk-visible@m">
+                    <!-- <div class="idz-footer-download uk-visible@m">
                         <a href=""><img src="images/download_apple.png" alt=""></a>
                         <a href=""><img src="images/download_google.png" alt=""></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="uk-width-1-1 uk-margin-large-top uk-margin-large-bottom">
                     <!-- logo footer begin -->
@@ -574,3 +575,21 @@
 </body>
 
 </html>
+
+
+
+<!--{Nav bar with 2 coloum dropdown}  <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-nav-header">Bibaabo</li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href=" ">Our Team</a></li>
+                                                <li><a href="testimonials.html">Testimonials</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li> -->
