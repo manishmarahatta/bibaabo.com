@@ -16,12 +16,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components/swiper.css">
     <link rel="stylesheet" href="css/components/font-awesome.css"> </head>
 
 <body>
     <header>
         <div class="uk-container uk-container-expand">
-            <div class="uk-grid">
+            <div class="uk-grid ">
                 <div class="uk-width-2-5@l uk-width-1-3@m uk-width-1-4@s">
                     <!-- logo header begin -->
                     <div id="header-logo">
@@ -37,15 +38,15 @@
                                     <div data-uk-form-custom="target: > * > span:last-child">
                                         <select>
                                             <option value="1">English</option>
-                                            <!-- <option value="2">Nepali</option> -->
+                                            <option value="2">Nepali</option>
                                         </select>
                                         <span>
                                             <span class="idz-globe"><i class="fa fa-globe"></i></span>
-                                            <span></span>
+                                        <span></span>
                                         </span>
                                     </div>
                                 </form> 
-                                <!-- <a class="uk-button uk-display-inline" href=""><i class="fa fa-sign-in"></i>&nbsp; Login</a> -->
+                                     <!-- <a class="uk-button uk-display-inline" href=""><i class="fa fa-sign-in"></i>&nbsp; Login</a>  -->
                             </div>
                         </div>
                         <div class="uk-width-1-2 phone-number">
@@ -55,36 +56,33 @@
                 </div>
                 <div class="uk-width-1-1">
                     <hr>
-                    <hr>
                     <!-- Main navigation begin -->
-                    <nav class="uk-navbar-container uk-visible@m" data-uk-navbar style="z-index: 980;"
-                        data-uk-sticky="animation: uk-animation-slide-top; cls-active: uk-sticky; cls-inactive: uk-navbar-container; bottom: #offset">
+                    <nav class="uk-navbar-container uk-visible@m" data-uk-navbar style="z-index: 980;" data-uk-sticky="animation: uk-animation-slide-top; cls-active: uk-sticky; cls-inactive: uk-navbar-container; bottom: #offset">
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav">
-                                <li > <a href="index.html">Home</a></li>
-                                <li class="uk-active"><a href="Ebima.html">E-Bima</a></li>
+                                <li class="uk-active"> <a href="index.html">Home</a></li>
+                                <li><a href="Ebima.html">E-Bima</a></li>
                                 <li><a href="Ebank.html">E-Bank</a></li>
                                 <li><a href="Estock.html">E-Stock</a></li>
                                 <li><a href="Eloan.html">E-Loan</a></li>
                                 <li> <a href="Ecreditcard.html">E-Credit Card</a>
-                                <li> <a>About US</a>
+                                <li> <a >About US</a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1">
                                         <div class="uk-navbar-dropdown-grid uk-child-width-1-1" data-uk-grid>
                                             <div>
                                                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                    <li><a href="Ourteam.html">Our Team</a></li>
-                                                    <li><a href="contact.html">Contact US</a></li>
+<!--                                                     <li><a href="Ourteam.html">Our Team</a></li>-->
+                                                    <li><a href="https://b2b.bibaabo.com/contact">Contact US</a></li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div>  
                                     </div>
-                       
-                        </li>
-                        </ul>
+                                    
+                                 </li>
+                            </ul>
                         </div>
                         <div class="uk-navbar-right uk-visible@l">
-                            <div data-uk-margin> <a class="uk-button uk-button-default" href="">Refer and earn</a> <a
-                                    class="uk-button uk-button-primary" href="Learn.html">Learn and Grow</a> </div>
+                           Become a Financial Advisor &nbsp; <div data-uk-margin> <a class="uk-button uk-button-default" href="https://b2b.bibaabo.com/onboarding-form">Individual</a> <a class="uk-button uk-button-primary" href="https://b2b.bibaabo.com/bibaabo-bfa-on-boarding-form/new">Institutional</a> </div>
                         </div>
                     </nav>
                     <!-- Main navigation end -->
@@ -95,37 +93,20 @@
                             <button class="uk-modal-close-full uk-close-large" type="button" data-uk-close></button>
                             <div data-uk-height-viewport>
                                 <div class="uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                    <ul class="uk-nav-primary uk-nav-parent-icon" data-uk-nav>
-                                        <li > <a href="index.html">Home</a>
-                                            <!-- <ul class="uk-nav-sub">
-                                                <li><a href="index.html">Homepage 1</a></li>
-                                                 <li><a href="index-layout2.html">Homepage 2</a></li>
-                                                <li><a href="index-layout3.html">Homepage 3</a></li>
-                                                <li><a href="index-layout4.html">Homepage 4</a></li>
-                                            </ul> -->
+                                    <ul class="uk-nav-primary " data-uk-nav>
+                                        <li class="uk-active "> <a href="index.html">Home</a>
                                         </li>
-                                        <li class="uk-active"><a href="lng.html">E-Bima</a></li>
+                                        <li><a href="lng.html">E-bima</a></li>
                                         <li><a href="education.html">E-Bank</a></li>
-                                        <!-- <li class="uk-parent"> <a href="#">Pages</a>
-                                            <ul class="uk-nav-sub">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                 <li><a href="sitemap.html">Sitemap</a></li>
-                                                <li><a href="404-error.html">404 Error</a></li> 
-                                            </ul>
-                                        </li> -->
-                                        <li><a href="blog.html">E-Stock</a></li>
-                                        <li><a href="testimonials.html" >E-Loan</a></li>
-                                        <li><a href="about.html" >E-Credit card</a></li>
+                                        <li > <a href="blog.html">E-Stock</a></li>
+                                        <li><a href="testimonials.html">E-Loan</a></li>
+                                        <li><a href="about.html">E-Credit Card</a></li>
                                         <li class="uk-parent"> <a href="">Know US</a>
                                             <ul class="uk-nav-sub">
-                                                <!-- <li class="uk-nav-header">Example Pages</li> -->
-                                                <!-- <li><a href="about.html">About Us</a></li> -->
-                                                <li><a href="faq.html">Our Team</a></li>
-                                                <li><a href="contact.html">Contact US</a></li>
-                                        
+                                                
+                                                <li><a href="Ourteam.html">Our Team</a></li>
+                                                <li><a href="https://b2b.bibaabo.com/contact">Contact Us</a></li>
+                            
                                             </ul>
                                         </li>
                                     </ul>
@@ -276,7 +257,9 @@
                                     
                                     </tr>
                                 </tbody>
-                             </table> <a class="uk-button uk-button-text uk-align-right" href="#">Download Mobile app</a> </div> 
+                             </table> 
+                             <!-- <a class="uk-button uk-button-text uk-align-right" href="#">Download Mobile app</a>  -->
+                            </div> 
                     </div>
                 </div>
                 <div class="uk-width-1-1 uk-margin-medium-top">
@@ -285,7 +268,7 @@
                             <div class="uk-width-expand@l uk-width-1-1@s">
                                 <p class="uk-text-large">Secure your future with confidence – buy insurance from our trusted platform today.</p>
                             </div>
-                            <div class="uk-width-auto@l uk-width-1-1@s"> <a class="uk-button uk-button-primary" href="#">Buy Now</a> </div>
+                            <!-- <div class="uk-width-auto@l uk-width-1-1@s"> <a class="uk-button uk-button-primary" href="#">Buy Now</a> </div> -->
                         </div>
                     </div>
                 </div>
@@ -308,9 +291,8 @@
                 </div>
                 <div class="uk-width-1-4@l uk-width-1-5@m uk-width-1-3@s">
                     <ul class="uk-list">
-                        <br>
-                        <br>
-    
+                            <br>
+                            <br>
                         <li><a href="#">Insurance</a></li>
                         <li><a href="#">E-Loan</a></li>
                         <li><a href="#">POS Machine</a></li>
@@ -320,7 +302,8 @@
                 </div>
                 <div class="uk-width-1-4@l uk-width-1-5@m uk-width-1-3@s">
                     <ul class="uk-list">
-    
+                        <br>
+                        <br>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Partner with us</a></li>
                         <li><a href="#">Blog</a></li>
