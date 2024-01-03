@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Bibaabo: Making your financial life easier</title>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="./images/favicon.ico">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="./images/favicon.png">
 
     <link href="./plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="./plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map"></script>
@@ -87,7 +87,10 @@
     </section>
     <!-- banking -->
     <section class="my-banking position-relative">
-        <img src="./images/Chair.png" alt="Bibaabo banking" class="img-fluid object-fit-cover w-100 h-100">
+        <picture>
+            <source media="(max-width:575px)" srcset="./images/sm-img-1.png">
+            <img src="./images/Chair.png" alt="Bibaabo banking" class="img-fluid object-fit-cover w-100 h-100 my-sm-img">
+        </picture> 
         <div class="bank-text-w">
             <h1 class="">
                 Lets <b>Disturb</b> <br />
@@ -104,7 +107,10 @@
     </section>
     <!-- get set go -->
     <section class="my-gso position-relative">
-        <img src="./images/img-2.png" alt="Bibaabo" class="img-fluid object-fit-cover w-100 h-100">
+        <picture>
+            <source media="(max-width:575px)" srcset="./images/sm-img-2.png">
+            <img src="./images/img-2.png" alt="Bibaabo" class="img-fluid object-fit-cover w-100 h-100 my-sm-img">
+        </picture> 
         <div class="gso-text-w">
             <h1 class="text-white display-3 fw-bold">
                 Get Set Go
@@ -152,8 +158,11 @@
                         <h1 class="fw-bold display-4 text-white mbl-text mbl-text-3">सम्पूर्ण सेवाहरु तपाईंको मोबाईलमा </h1>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="./images/mobile.png" alt="Bibaabo" class="img-fluid object-fit-cover">
+                <div class="col-md-5 text-center">
+                    <picture>
+                        <source media="(max-width:575px)" srcset="./images/sm-img-4.png">
+                        <img src="./images/mobile.png" alt="Bibaabo" class="img-fluid object-fit-cover">
+                    </picture> 
                 </div>
             </div>
         </div>
@@ -161,20 +170,23 @@
     <div class="my-fix-img"></div>
     <!-- explore -->
     <section class="my-explr position-relative">
-        <img src="./images/img-4.jpeg" alt="Bibaabo" class="img-fluid object-fit-cover w-100 h-100">
-        <div class="my-explr-items">
+        <img src="./images/img-4.jpeg" alt="Bibaabo" class="img-fluid object-fit-cover w-100 h-100" id="bankImg">
+        <div class="my-explr-items" id="bankText">
             <div class="row align-items-center h-100">
                 <div class="col-md-3">
                     <img src="./images/icon-1.png" alt="Bibaabo" class="img-fluid object-fit-cover">
                 </div>
                 <div class="col-md-3">
-                    <div class="kyc-text-w">
-                        <h2 class="fw-bold text-center text-md-end text-white">Easy </h2>
+                    <div class="kyc-text-w position-relative">
+                        <h2 class="fw-bold text-center text-md-end text-white bank-text bank-text-1">Easy </h2>
+                        <h2 class="fw-bold text-center text-md-end text-white bank-text bank-text-2">Cashless </h2>
+                        <h2 class="fw-bold text-center text-md-end text-white bank-text bank-text-3">Paperless </h2>
+                        <h2 class="fw-bold text-center text-md-end text-white bank-text bank-text-4">Digital </h2>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="kyc-text-w">
-                        <h2 class="fw-bold text-white">Banking </h2>
+                        <h2 class="fw-bold text-white mt-4 mt-md-0">Banking </h2>
                     </div>
                 </div>
                 <div class="col-md-3 mt-4 mt-md-0">
@@ -308,6 +320,6 @@
 </body>
 <script src="./js/jquery.min.js"></script>
 
-<script src="./js/custom.min.js?v=1.0"></script>
+<script src="./js/custom.js?v=1.0"></script>
 
 </html>

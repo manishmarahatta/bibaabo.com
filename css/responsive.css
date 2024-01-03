@@ -218,4 +218,13 @@
     h1.count {
         font-size: 10rem;
     }
+
+    .my-sm-img {
+        object-fit: contain !important;
+        height: auto !important;
+    }
+
+    .my-fix-img {
+        background-image: url("../images/sm-img-3.png");
+    }
 }
