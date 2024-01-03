@@ -22,6 +22,24 @@ function startCounter() {
 
 document.addEventListener('DOMContentLoaded', startCounter);
 
+let mpcount = 1;
+let bnkcount = 1;
+const mpinterval = setInterval(() => {
+    if (mpcount > 3) {
+        mpcount = 1
+    }
+    if (bnkcount > 4) {
+        bnkcount = 1
+    }
+    $('.mp-text').removeClass('show')
+    $('.text-'+mpcount).addClass('show')
+    
+    $('.bank-text').removeClass('show')
+    $('.bank-text-'+bnkcount).addClass('show')
+    mpcount++;
+    bnkcount++;
+}, 2000);
+
 document.addEventListener('scroll', function () {
     var windowWd = window.innerWidth
     if (windowWd > 991) {
@@ -38,19 +56,19 @@ document.addEventListener('scroll', function () {
             content.style.top = '50%';
             content.style.transform = 'translate(-50%, -50%)';
 
-            if (contentRect.top > -500) {
-                $('.text-2').removeClass('show')
-                $('.text-3').removeClass('show')
-                $('.text-1').addClass('show')
-            } else if (contentRect.top > -1000) {
-                $('.text-1').removeClass('show')
-                $('.text-3').removeClass('show')
-                $('.text-2').addClass('show')
-            } else {
-                $('.text-1').removeClass('show')
-                $('.text-2').removeClass('show')
-                $('.text-3').addClass('show')
-            }
+            // if (contentRect.top > -500) {
+            //     $('.text-2').removeClass('show')
+            //     $('.text-3').removeClass('show')
+            //     $('.text-1').addClass('show')
+            // } else if (contentRect.top > -1000) {
+            //     $('.text-1').removeClass('show')
+            //     $('.text-3').removeClass('show')
+            //     $('.text-2').addClass('show')
+            // } else {
+            //     $('.text-1').removeClass('show')
+            //     $('.text-2').removeClass('show')
+            //     $('.text-3').addClass('show')
+            // }
         } else {
             content.style.position = 'absolute';
             content.style.top = '50%';
@@ -86,6 +104,6 @@ document.addEventListener('scroll', function () {
             $('.mbl-text-1').removeClass('show')
             $('.mbl-text-2').removeClass('show')
             $('.mbl-text-3').removeClass('show')
-        }
+        }        
     }
 });
