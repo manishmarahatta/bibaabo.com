@@ -4,7 +4,10 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Salsa', sans-serif; */
 }
 
 .my-header {
@@ -208,13 +211,15 @@ h1.my-h1 {
 }
 
 .h-video {
-    height: 88vh;
+    height: 87vh;
 }
 
 .top-dwn-btns {
     position: absolute;
     bottom: 5rem;
-    right: 10rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-dwn-btns img,
