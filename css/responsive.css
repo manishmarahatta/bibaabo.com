@@ -100,6 +100,12 @@
 @media screen and (max-width: 1199px) {}
 
 @media screen and (max-width: 991px) {
+    .navbar-light .navbar-toggler {
+        border: none;
+    }
+    .navbar-light .navbar-toggler:focus {
+        box-shadow: none;
+    }
     .mp-text-w.partner {
         width: 80%;
         top: 30%;
