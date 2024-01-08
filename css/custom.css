@@ -269,3 +269,11 @@ h1.my-h1 {
     display: flex;
     justify-content: center;
 }
+.btm-bibaabo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btm-bibaabo img {
+    width: 250px;
+}
