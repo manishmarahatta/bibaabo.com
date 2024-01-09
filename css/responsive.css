@@ -100,6 +100,9 @@
 @media screen and (max-width: 1199px) {}
 
 @media screen and (max-width: 991px) {
+    .btm-bibaabo {
+        flex-direction: column;
+    }
     .navbar-light .navbar-toggler {
         border: none;
     }
