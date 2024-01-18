@@ -20,6 +20,10 @@ body {
     color: var(--primary);
 }
 
+.text-gray {
+    color: #999;
+}
+
 .my-btn-primary {
     color: #fff;
     background-color: var(--primary);
@@ -80,13 +84,17 @@ h1.my-h1 {
     width: 75%;
 }
 
+.kyc-text-wrap {
+    height: 100px;
+}
+
 .gso-text-w {
     position: absolute;
     top: 50%;
     left: 35%;
     right: 50%;
     transform: translate(-50%, -50%);
-    width: 25%;
+    width: 30%;
     text-align: center;
 }
 
@@ -188,6 +196,7 @@ h1.my-h1 {
 
 .mp-text,
 .mbl-text,
+.kyc-text,
 .bank-text {
     margin-top: 1rem;
     opacity: 0;
@@ -195,17 +204,21 @@ h1.my-h1 {
     width: 100%;
     overflow: hidden;
 }
+
 .mp-text.show,
+.kyc-text.show,
 .mbl-text.show {
     opacity: 1;
     transform: translateY(-15px);
     transition: .4s ease-in-out;
 }
+
 .bank-text.show {
     opacity: 1;
     transform: translateY(-40px);
     transition: .4s ease-in-out;
 }
+
 .mbl-text {
     line-height: 1.5;
 }
@@ -259,21 +272,86 @@ h1.my-h1 {
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.my-a {
+    text-decoration: none;
 }
 
 .network-box img {
-    width: 185px;
-    margin: 0 1rem;
+    width: 150px;
+    margin: 0 1rem 1rem 0;
 }
+
 .gso-img-w {
     display: flex;
     justify-content: center;
 }
+
 .btm-bibaabo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .btm-bibaabo img {
     width: 250px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.my-video {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.my-video.abt-vdo {
+    height: 72vh;
+}
+
+.font-pops {
+    font-family: 'Poppins', sans-serif;
+}
+
+.qty-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.qty-title img {
+    width: 60px;
+}
+
+.Q-color {
+    color: #00a7bb;
+}
+
+.U-color {
+    color: #ff628e;
+}
+
+.A-color {
+    color: #005b94;
+}
+
+.L-color {
+    color: #66849c;
+}
+
+.fw-900 {
+    font-weight: 900;
 }
