@@ -24,20 +24,24 @@ document.addEventListener('DOMContentLoaded', startCounter);
 
 let mpcount = 1;
 let bnkcount = 1;
+let kyccount = 1;
 const mpinterval = setInterval(() => {
     if (mpcount > 3) {
         mpcount = 1
+        bnkcount = 1
     }
     if (bnkcount > 4) {
         bnkcount = 1
     }
     $('.mp-text').removeClass('show')
     $('.text-'+mpcount).addClass('show')
-    
     $('.bank-text').removeClass('show')
     $('.bank-text-'+bnkcount).addClass('show')
+    $('.kyc-text').removeClass('show')
+    $('.kyc-text-'+mpcount).addClass('show')
     mpcount++;
     bnkcount++;
+    kyccount++;
 }, 2000);
 
 document.addEventListener('scroll', function () {
@@ -83,21 +87,29 @@ document.addEventListener('scroll', function () {
         if ((mblcontentRect.bottom >= centerY + 100) && mblcontentRect.top <= centerY) {
             mblcontent.style.position = 'fixed';
             mblcontent.style.top = '30%';
-            mblcontent.style.width = '40%';
+            mblcontent.style.width = '50%';
             mblcontent.style.transform = 'translate(-90%)';
-
+            console.log('top',mblcontentRect.top)
             if (mblcontentRect.top > 0) {
                 $('.mbl-text-2').removeClass('show')
                 $('.mbl-text-3').removeClass('show')
+                $('.mbl-text-4').removeClass('show')
                 $('.mbl-text-1').addClass('show')
-            } else if (mblcontentRect.top > -250) {
+            } else if (mblcontentRect.top > -180) {
                 $('.mbl-text-1').removeClass('show')
                 $('.mbl-text-3').removeClass('show')
+                $('.mbl-text-4').removeClass('show')
                 $('.mbl-text-2').addClass('show')
+            } else if (mblcontentRect.top > -340) {
+                $('.mbl-text-1').removeClass('show')
+                $('.mbl-text-2').removeClass('show')
+                $('.mbl-text-4').removeClass('show')
+                $('.mbl-text-3').addClass('show')
             } else {
                 $('.mbl-text-1').removeClass('show')
                 $('.mbl-text-2').removeClass('show')
-                $('.mbl-text-3').addClass('show')
+                $('.mbl-text-3').removeClass('show')
+                $('.mbl-text-4').addClass('show')
             }
         } else {
             mblcontent.style.position = 'absolute';
